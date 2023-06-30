@@ -11,7 +11,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/flickr.png" class="logo" alt="">
+                <img src="images/logo.png" class="logo" alt="">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -26,5 +26,72 @@
             </div>
         </div>
     </div>
+
+    <!------------about----------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_20220922_145229.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello I'm Ishan Hansaka from Sri Lanka. Having an experience of more than 3+ years in Video Editing and Graphic Design. I am hard work person with full creative ideas. I love editing videos, photos and making various content since childhood. I communicate very well with my clients, I listen to their needs and  I deliver effective work. Always I try to do my best for my clients. Please check my reviews to know what other costumers think of me ; ) I have clean hand on using software’s like Adobe Photoshop, Adobe Premiere Pro, DaVinci Resolve, After Effects. Thank you for giving me the opportunity to serve you.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX<Br></span> design</li>
+                            <li><span>UI/UX<Br></span> design</li>
+                            <li><span>UI/UX<Br></span> design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>dddddddddddddd<Br></span> design</li>
+                            <li><span>UI/UX<Br></span> design</li>
+                            <li><span>UI/UX<Br></span> design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>bbbbbbbbbbbbbbbbb<Br></span> design</li>
+                            <li><span>UI/UX<Br></span> design</li>
+                            <li><span>UI/UX<Br></span> design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
+
+
+
 </body>
 </html>
