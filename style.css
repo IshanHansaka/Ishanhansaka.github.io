@@ -4,6 +4,9 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #000000;
     color: #ffffff;
@@ -385,4 +388,12 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
+}
+
+/*-----------------------form message---------------------------*/
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
