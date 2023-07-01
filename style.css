@@ -66,7 +66,7 @@ nav ul li a:hover::after{
     font-size: 60px;
 }
 .header-text h1 span{
-    color: #ff7636;
+    color: #ff5100;
 }
 
 /*------------------------about-------------------------------*/
@@ -268,6 +268,9 @@ nav ul li a:hover::after{
     margin-top: 30px;
     font-size: 20px;
 }
+.contact-left p span{
+    margin-left: 40px;
+}
 .contact-left p i{
     color: #ff5100;
     margin-right: 15px;
@@ -344,6 +347,7 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
     nav ul {
         background: #ff5100;
@@ -364,7 +368,6 @@ nav .fas{
         position: absolute;
         top: 25px;
         left: 25px;
-        cursor: pointer;
     }
     .sub-tile{
         font-size: 40px;
